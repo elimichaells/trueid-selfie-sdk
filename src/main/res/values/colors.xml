@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ring colors -->
+    <color name="trueid_ring_active">#FF22C55E</color>
+    <color name="trueid_ring_inactive">#3722C55E</color>
+    <color name="trueid_ring_glow">#AA22C55E</color>
+
+    <!-- Mesh overlay -->
+    <color name="trueid_mesh_stroke">#FF22C55E</color>
+    <color name="trueid_mesh_stroke_detecting">#CC22C55E</color>
+    <color name="trueid_mesh_glow">#5922C55E</color>
+
+    <!-- Status pill backgrounds -->
+    <color name="trueid_status_loading">#FF64748B</color>
+    <color name="trueid_status_no_face">#FF1E3A8A</color>
+    <color name="trueid_status_detected">#FF3B82F6</color>
+    <color name="trueid_status_centered">#FF22C55E</color>
+    <color name="trueid_status_error">#FFEF4444</color>
+
+    <!-- Backgrounds -->
+    <color name="trueid_card_bg">#FFFFFFFF</color>
+    <color name="trueid_control_bar_bg">#FFF8FAFC</color>
+    <color name="trueid_guidance_text">#FF6B7280</color>
+    <color name="trueid_guidance_text_active">#FF22C55E</color>
+
+    <!-- Capture button -->
+    <color name="trueid_btn_ready">#FF22C55E</color>
+    <color name="trueid_btn_standby">#FFEAB308</color>
+</resources>

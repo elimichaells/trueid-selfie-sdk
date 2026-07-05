@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trueid_guidance_position">Position your face inside the ring.</string>
+    <string name="trueid_guidance_closer_center">Move closer and center your face.</string>
+    <string name="trueid_guidance_back_center">Move back slightly and center your face.</string>
+    <string name="trueid_guidance_closer">Move a little closer.</string>
+    <string name="trueid_guidance_back">Move back slightly.</string>
+    <string name="trueid_guidance_center">Center your face inside the ring.</string>
+    <string name="trueid_guidance_hold_still">Perfect. Hold still while we lock in.</string>
+    <string name="trueid_guidance_capture_ready">Face aligned. Capture when ready.</string>
+    <string name="trueid_guidance_unavailable">Live face analysis is unavailable right now.</string>
+    <string name="trueid_guidance_capture_failed">Capture failed. Reposition and try again.</string>
+
+    <string name="trueid_status_loading">Initializing…</string>
+    <string name="trueid_status_no_face">No face detected</string>
+    <string name="trueid_status_detected">Face detected</string>
+    <string name="trueid_status_centered">Face aligned</string>
+    <string name="trueid_status_error">Error</string>
+
+    <string name="trueid_btn_capture">Capture</string>
+    <string name="trueid_btn_retake">Retake</string>
+    <string name="trueid_btn_confirm">Confirm</string>
+
+    <string name="trueid_content_desc_switch_camera">Switch camera</string>
+    <string name="trueid_content_desc_close">Close</string>
+</resources>

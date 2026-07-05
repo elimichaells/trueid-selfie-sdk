@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SegmentRingView">
+        <attr name="ringActiveColor" format="color" />
+        <attr name="ringInactiveColor" format="color" />
+        <attr name="ringGlowColor" format="color" />
+        <attr name="segmentCount" format="integer" />
+    </declare-styleable>
+</resources>

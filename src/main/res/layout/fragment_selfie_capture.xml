@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trueid_card_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Close button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/trueid_content_desc_close"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+    <!-- Status pill -->
+    <com.trueid.sdk.selfie.overlay.GuidanceOverlayView
+        android:id="@+id/guidanceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- Ring + Preview stack -->
+    <FrameLayout
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Segment ring (background) -->
+        <com.trueid.sdk.selfie.overlay.SegmentRingView
+            android:id="@+id/ringView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Circular camera preview (centered) -->
+        <com.trueid.sdk.selfie.overlay.CircularPreviewLayout
+            android:id="@+id/previewLayout"
+            android:layout_width="194dp"
+            android:layout_height="194dp"
+            android:layout_gravity="center">
+
+            <!-- Face mesh overlay on top of preview -->
+            <com.trueid.sdk.selfie.overlay.FaceMeshOverlayView
+                android:id="@+id/meshOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.trueid.sdk.selfie.overlay.CircularPreviewLayout>
+    </FrameLayout>
+
+    <!-- Guidance text -->
+    <TextView
+        android:id="@+id/guidanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/trueid_guidance_text"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        tools:text="Position your face inside the ring." />
+
+    <!-- Manual capture button -->
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/trueid_btn_capture"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trueid_control_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/switchCameraButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/trueid_content_desc_switch_camera"
+            android:src="@android:drawable/ic_menu_camera"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>
